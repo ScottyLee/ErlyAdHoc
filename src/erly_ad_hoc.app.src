@@ -1,0 +1,9 @@
+%% -*- erlang -*-
+{application, erly_ad_hoc,
+ [{description, "erly_ad_hoc"},
+  {vsn, "0.1"},
+  {modules, []},
+  {registered, []},
+  {mod, {'erly_ad_hoc_app', []}},
+  {env, []},
+  {applications, [kernel, stdlib, crypto]}]}.
