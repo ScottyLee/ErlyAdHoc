@@ -1,10 +1,10 @@
 -module (erly_ad_hoc_upload_manager).
--export ([upload_callback/2, process_request/1]).
+-export ([process_request/1]).
 
 -record(state, {filename, file}).
 
 process_request(Req)->
-    Callback = fun(N) -> erly_ad_hoc_upload_manager:upload_callback(N, #state{}) end,
+    Callback = fun(N) -> upload_callback(N, #state{}) end,
     io:format("~nprocess_request~n", []),
     mochiweb_multipart:parse_multipart_request(Req, Callback),
     <<"OK">>.
