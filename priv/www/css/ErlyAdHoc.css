@@ -1,0 +1,172 @@
+  html, body
+  {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body
+  {
+    background: #6e6e6e;
+    text-align: center;
+  }   
+  
+  h1
+  {
+    font-family: 'Allan', serif;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    margin: 20px 0;
+  }
+
+  /* --------------------------- */
+  
+  body:before 
+  {
+    content: "";
+    position: fixed;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    z-index: 100;
+    -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+    -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+    box-shadow: 0px 0px 10px rgba(0,0,0,.8);        
+  }
+
+  /* --------------------------- */
+  
+  div.box 
+  {
+    position: relative;
+    width: 20%;
+    background: #ddd;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding: 0.5em 0.5em;
+    color: rgba(0,0,0, .8);
+    text-shadow: 0 1px 0 #fff;
+    line-height: 1.5;
+    margin: 60px auto;
+  }
+
+
+  div.box:before, div.box:after 
+  {
+    z-index: -1; 
+    position: absolute; 
+    content: "";
+    bottom: 15px;
+    left: 10px;
+    width: 50%; 
+    top: 80%;
+    max-width:300px;
+    background: rgba(0, 0, 0, 0.7); 
+    -webkit-box-shadow: 0 15px 10px rgba(0,0,0, 0.7);   
+    -moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+    -webkit-transform: rotate(-3deg);    
+    -moz-transform: rotate(-3deg);   
+    -o-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+  }
+
+  div.box:after 
+  {
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    transform: rotate(3deg);
+    right: 10px;
+    left: auto;
+  } 
+
+
+
+.install_btn {
+  -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  box-shadow:inset 0px 1px 0px 0px #ffffff;
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #00ff1a), color-stop(1, #3f573f) );
+  background:-moz-linear-gradient( center top, #00ff1a 5%, #3f573f 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ff1a', endColorstr='#3f573f');
+  background-color:#00ff1a;
+  -webkit-border-top-left-radius:7px;
+  -moz-border-radius-topleft:7px;
+  border-top-left-radius:7px;
+  -webkit-border-top-right-radius:7px;
+  -moz-border-radius-topright:7px;
+  border-top-right-radius:7px;
+  -webkit-border-bottom-right-radius:7px;
+  -moz-border-radius-bottomright:7px;
+  border-bottom-right-radius:7px;
+  -webkit-border-bottom-left-radius:7px;
+  -moz-border-radius-bottomleft:7px;
+  border-bottom-left-radius:7px;
+  text-indent:0;
+  border:1px solid #e8e8e8;
+  display:inline-block;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:15px;
+  font-weight:normal;
+  font-style:normal;
+  height:30px;
+  line-height:30px;
+  width:100px;
+  text-decoration:none;
+  text-align:center;
+  text-shadow:1px 1px 0px #a3a3a3;
+}
+.install_btn:hover {
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #3f573f), color-stop(1, #00ff1a) );
+  background:-moz-linear-gradient( center top, #3f573f 5%, #00ff1a 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3f573f', endColorstr='#00ff1a');
+  background-color:#3f573f;
+}
+
+.install_btn:active {
+  position:relative;
+  top:1px;
+}
+
+
+
+
+
+
+#dropZone {    
+    color: #555;
+    font-size: 18px;
+    text-align: center;    
+    
+    width: 400px;
+    padding: 50px 0;
+    margin: 50px auto;
+    
+    background: #ddd;
+    border: 1px solid #ccc;
+    
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#dropZone.hover {
+    background: #eee;
+    border-color: #aaa;
+}
+
+#dropZone.error {
+    background: #faa;
+    border-color: #f00;
+}
+
+#dropZone.drop {
+    background: #afa;
+    border-color: #0f0;
+}
+
+
